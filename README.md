@@ -57,9 +57,26 @@ Beyond standard classification, the system focuses on:
 
 ## 📊 Dataset
 
-* Multi-class image dataset with **53 categories**
-* Structured into **train, validation, and test splits**
-* Designed to evaluate **fine-grained visual recognition performance**
+This project uses the **Cards Image Dataset for Classification**, a high-quality dataset designed for fine-grained visual recognition tasks.
+
+### 📌 About the Dataset:
+
+* All images are **224 × 224 × 3** in **JPG format**
+* Each image is **cropped to contain a single playing card**
+* The card occupies **more than 50% of the image area**, ensuring clarity and focus
+* The dataset contains:
+
+  * **7,624 training images**
+  * **265 validation images**
+  * **265 test images**
+* The dataset is organized into **53 subdirectories**, each representing a unique card class
+* Includes a **CSV file** for alternative dataset loading and analysis
+
+### 🧠 Structure:
+
+* Train / Validation / Test splits
+* Folder-based labeling (compatible with PyTorch `ImageFolder`)
+* Designed for **multi-class image classification**
 
 ---
 
@@ -120,3 +137,4 @@ This project demonstrates:
 * Strong understanding of **computer vision and transfer learning**
 * Ability to build **scalable deep learning pipelines**
 * Practical skills in **model evaluation, optimization, and interpretability**
+
